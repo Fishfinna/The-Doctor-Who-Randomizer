@@ -1,11 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./*{html,js}"],
   theme: {
-    extend: {},
-    fontFamily: {
-      DoctorWho: ["logo-font.ttf"],
+    extend: {
+      fontFamily: {
+        neue: ['"Bebas Neue"'],
+      },
     },
   },
-  plugins: [require("@tailwindcss/typeography")],
+  plugins: [require("daisyui")],
 };

@@ -71223,10 +71223,3 @@ ${story.Medium != "None" ? "Medium: " + story.Medium : ""} <br>
 }
 
 window.addEventListener("load", make_story);
-let body = document.querySelector("main");
-
-let button = document.createElement("button");
-
-button.setAttribute("type", "button");
-button.textContent = "new story";
-button.addEventListener("click", make_story);
